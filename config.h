@@ -74,10 +74,10 @@ static Key keys[] = {
 	/* focus prev/next tag */
 	/* { MODKEY,            XK_p,                      shiftview,      {.i = -1 } }, */
 	/* { MODKEY,            XK_n,                      shiftview,      {.i = +1 } }, */
-	/* { MODKEY,                       XK_p,   viewtoleft,     {0} }, */
-	/* { MODKEY,                       XK_n,   viewtoright,    {0} }, */
-	/* { MODKEY|ShiftMask,             XK_p,   tagtoleft,      {0} }, */
-	/* { MODKEY|ShiftMask,             XK_n,   tagtoright,     {0} }, */
+	{ MODKEY,                       XK_p,   viewtoleft,     {0} },
+	{ MODKEY,                       XK_n,   viewtoright,    {0} },
+	{ MODKEY|ShiftMask,             XK_p,   tagtoleft,      {0} },
+	{ MODKEY|ShiftMask,             XK_n,   tagtoright,     {0} },
 	/* kill focused client */
 	{ MODKEY,            XK_d,                      killclient,      {0} },
 	/* change gaps */
