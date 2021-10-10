@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -81,8 +81,8 @@ static Key keys[] = {
 	/* kill focused client */
 	{ MODKEY,            XK_d,                      killclient,      {0} },
 	/* change gaps */
-	/* { MODKEY,            XK_Down,                   setgaps,         {.i = -5 } }, */
-	/* { MODKEY,            XK_Up,                     setgaps,         {.i = +5 } }, */
+	{ MODKEY,            XK_Down,                   setgaps,         {.i = -5 } },
+	{ MODKEY,            XK_Up,                     setgaps,         {.i = +5 } },
 	/* change windows in master */
 	{ MODKEY|ShiftMask,  XK_minus,                  incnmaster,      {.i = -1 } },
 	{ MODKEY|ShiftMask,  XK_equal,                  incnmaster,      {.i = +1 } },
