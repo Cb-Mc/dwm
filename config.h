@@ -105,6 +105,7 @@ static Key keys[] = {
 	{ XK_NO_MOD,         XF86XK_AudioMicMute,       spawn,           SHCMD("amixer sset Capture toggle") },
 	{ XK_NO_MOD,         XF86XK_Launch1,            spawn,           SHCMD("system-options") },
 	{ XK_NO_MOD,         XF86XK_ScreenSaver,        spawn,           SHCMD("betterlockscreen -l") },
+	{ XK_NO_MOD,         XF86XK_Display,            spawn,           SHCMD("autorandr --load internal") },
 	{ XK_NO_MOD,         XF86XK_TouchpadToggle,     spawn,           SHCMD("touchpad-toggle") },
 	/* mpc media controls */
 	{ XK_NO_MOD,         XF86XK_AudioPlay,          spawn,           SHCMD("mpc toggle") },
