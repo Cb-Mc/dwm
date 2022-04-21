@@ -101,8 +101,8 @@ static Key keys[] = {
 	{ XK_NO_MOD,         XF86XK_AudioLowerVolume,   spawn,           SHCMD("amixer sset Master 1db-") },
 	{ XK_NO_MOD,         XF86XK_AudioRaiseVolume,   spawn,           SHCMD("amixer sset Master 1db+") },
 	{ XK_NO_MOD,         XF86XK_AudioMute,          spawn,           SHCMD("amixer sset Master toggle") },
-	/* x220 keyboard function keys */
 	{ XK_NO_MOD,         XF86XK_AudioMicMute,       spawn,           SHCMD("amixer sset Capture toggle") },
+	/* x220 keyboard function keys */
 	{ XK_NO_MOD,         XF86XK_Launch1,            spawn,           SHCMD("system-options") },
 	{ XK_NO_MOD,         XF86XK_ScreenSaver,        spawn,           SHCMD("betterlockscreen -l") },
 	{ XK_NO_MOD,         XF86XK_Display,            spawn,           SHCMD("autorandr --load internal") },
