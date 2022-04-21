@@ -82,8 +82,8 @@ static Key keys[] = {
 	/* kill focused client */
 	{ MODKEY,            XK_d,                      killclient,      {0} },
 	/* change gaps */
-	{ MODKEY,            XK_Down,                   setgaps,         {.i = -5 } },
-	{ MODKEY,            XK_Up,                     setgaps,         {.i = +5 } },
+	{ MODKEY|ShiftMask,  XK_Down,                   setgaps,         {.i = -5 } },
+	{ MODKEY|ShiftMask,  XK_Up,                     setgaps,         {.i = +5 } },
 	/* change windows in master */
 	{ MODKEY|ShiftMask,  XK_minus,                  incnmaster,      {.i = -1 } },
 	{ MODKEY|ShiftMask,  XK_equal,                  incnmaster,      {.i = +1 } },
@@ -92,8 +92,8 @@ static Key keys[] = {
 	/* zoom */
 	{ MODKEY|ShiftMask,  XK_o,                      zoom,            {0} },
 	/* change mfact */
-	{ MODKEY,            XK_Left,                   setmfact,        {.f = -0.05 } },
-	{ MODKEY,            XK_Right,                  setmfact,        {.f = +0.05 } },
+	{ MODKEY|ShiftMask,  XK_Left,                   setmfact,        {.f = -0.05 } },
+	{ MODKEY|ShiftMask,  XK_Right,                  setmfact,        {.f = +0.05 } },
 	/* restart & dmenu system-options script */
 	{ MODKEY|ShiftMask,  XK_r,                      quit,            {0} },
 	{ MODKEY,            XK_q,                      spawn,           SHCMD("system-options") },
